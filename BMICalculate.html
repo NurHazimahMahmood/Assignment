@@ -1,0 +1,50 @@
+<!-- NAME: NUR HAZIMAH BINTI MAHMOOD 
+ID NUMBER :BPJ231210261
+CLASS: DIT 4/1 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BMI Calculate</title>
+		<link rel="stylesheet" href="BMICalculate.css">
+	</head>
+	
+    <body>
+        <header>
+            <div class="navigation">
+                <ul>
+                    <li><h1> BMI WEBSITE</h1></li>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="HealthInfoPage.html">BMI Info </a></li>
+                    <li><a href="BMICalculate.html">BMI Calculation</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="calculator-box">
+					<h2>BMI Calculator</h2>
+					<img src="/Users/HP/Documents/KPTM/TSE2543-WEB PROGRAMMING AND APPLICATION/NOTEPAD ++/Notepad++/Lab Exercise Notepad++/Assignment_1/index_bmi.jpg"  alt="BMI Image" style= "width: 300px; height: 200px;" class="top-image">
+
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter weight in kg" step="0.1" min="0">
+
+                    <label for="height">Height(m):</label>
+                    <input type="number" id="height" placeholder="Enter height in meters" step="0.01" min="0">
+
+                    <button onclick="calculateBMI()">Calculate BMI</button>
+
+                    <div class="result-container">
+						<div class="result-box" id="result"></div>
+						<div class="result-box" id="additional-result-1" ></div>
+						<div class="result-box" id="additional-result-2" ></div>
+					</div>
+            </div>
+        </main>
+
+        <script src="BMICalculate.js"></script>
+    </body>
+</html>
